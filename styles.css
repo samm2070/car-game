@@ -1,0 +1,87 @@
+.hide{
+
+    display:none;
+
+}
+	
+body{
+	background:rgb(42, 65, 42);
+}
+
+.startScreen{
+	color:rgb(252, 247, 247);
+
+    border: 1px solid rgb(230, 90, 90);
+    width: 300px;
+    margin: auto;
+    padding: 15px;
+    
+    
+
+}
+
+.game{
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.score{
+    position: relative;
+    margin: auto;
+    color: aliceblue;
+    font-family:monospace;
+    font-size: 1.5em; ;
+}
+
+.gameArea{
+    background-color: rgb(41, 38, 38);
+    width:300px;
+    height: 95vh;
+     overflow: hidden; /*  prevents scrollbars from showing up, even when they're necessary.*/ 
+    position: relative; /*positioned relative to its normal position  */ 
+    margin: auto; 
+    
+
+
+}
+
+.line{
+    position: absolute;   /* positioned relative to the nearest positioned ancestor*/ 
+    height: 100px;
+    width:10px;
+    margin-left: 149px;
+    background-color: white;
+}
+
+.car{
+
+    background-image: url(logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    bottom: 100px;   
+    margin: auto;
+    /* background-color: rgb(93, 218, 76); */
+    /* border-radius: 5%; */
+    
+    
+   
+}
+.enemy{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    
+    border-radius: 10%;
+
+    margin: auto;
+    background-color: rgb(93, 218, 76);
+      
+}
