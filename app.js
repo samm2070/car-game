@@ -127,7 +127,7 @@ function pressOff(e) {
 
 function gameEnd() {
     player.start = false;
-    score.innerHTML = "GAME OVER <BR> SCORE WAS: " + player.point + "<br>CAN'T YOU SCORE MORE THAN THIS?";
+    score.innerHTML = "GAME OVER <BR> SCORE WAS: " + player.point + "<br>Koi baat nahi,better luck next time :)";
     startScreen.classList.remove("hide");
     sound.pause();
     gameOver.play();
