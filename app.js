@@ -127,11 +127,13 @@ function pressOff(e) {
 
 function gameEnd() {
     player.start = false;
+    driver.play();
+    sound.pause();
     score.innerHTML = "GAME OVER <BR> SCORE WAS: " + player.point + "<br>Koi baat nahi,better luck next time :)";
     startScreen.classList.remove("hide");
-    sound.pause();
+    
 //     gameOver.play();
-    driver.play();
+    
 }
 
 function startGame() {
