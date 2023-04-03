@@ -107,10 +107,10 @@ function gameEngine() {
 
         }
 
-        if(player.point == 3000)
+       /*if(player.point == 3000)
         {
             driver.play();
-        }
+        } */
 
         window.requestAnimationFrame(gameEngine);
     }
@@ -130,7 +130,8 @@ function gameEnd() {
     score.innerHTML = "GAME OVER <BR> SCORE WAS: " + player.point + "<br>Koi baat nahi,better luck next time :)";
     startScreen.classList.remove("hide");
     sound.pause();
-    gameOver.play();
+//     gameOver.play();
+    driver.play();
 }
 
 function startGame() {
